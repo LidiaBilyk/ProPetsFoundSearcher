@@ -21,6 +21,7 @@ public class Entity {
 	String userLogin;
 	String type;
 	String breed;
+	String sex;
 	@Singular
 	List<String> tags;
     Location location;

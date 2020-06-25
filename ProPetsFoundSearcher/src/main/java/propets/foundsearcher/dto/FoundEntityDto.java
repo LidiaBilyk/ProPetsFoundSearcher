@@ -25,7 +25,8 @@ public class FoundEntityDto {
 	boolean typePost;
 	String userLogin;
 	String type;
-	String breed;	
+	String breed;
+	String sex;
 	List<String> tags;
     LocationDto location;
 
