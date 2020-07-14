@@ -1,10 +1,7 @@
 package propets.foundsearcher.dto;
 
-import java.util.List;
-
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
+import org.springframework.data.elasticsearch.annotations.Document;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -18,7 +15,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 @EqualsAndHashCode(of = {"id"})
-@Document("lostentities")
+@Document(indexName = "lostentities")
 public class LostEntityDto {
 	@Id
 	String id;
@@ -27,7 +24,7 @@ public class LostEntityDto {
 	String type;
 	String sex;
 	String breed;	
-	List<String> tags;
-    LocationDto location;
+	String tags;
+    LocationEntityDto location;
 
 }

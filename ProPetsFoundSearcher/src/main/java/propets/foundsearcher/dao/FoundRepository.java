@@ -1,9 +1,8 @@
 package propets.foundsearcher.dao;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import propets.foundsearcher.dto.FoundEntityDto;
 
-public interface FoundRepository extends MongoRepository<FoundEntityDto, String>{
+public interface FoundRepository extends ElasticsearchRepository<FoundEntityDto, String>{
 
 }
